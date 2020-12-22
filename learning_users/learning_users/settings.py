@@ -28,7 +28,7 @@ SECRET_KEY = 'mzqtiap^c=dl648@kg&s4hukzhcqw09&tt-bews+%9p15cz=bl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['saikiran007.pythonanywhere.com']
 
 
 # Application definition
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'learning_users.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
